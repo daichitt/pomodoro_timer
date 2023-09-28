@@ -6,6 +6,8 @@ import './input.css';
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
+import Header from './components/common/Header'
+
 
 const App = () => {
   const [sessionTime, setSessionTime] = useState(25);
@@ -40,6 +42,9 @@ const App = () => {
   };
 
   return (
+    // Header
+    <>
+    <Header />
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold">Pomodpro</h1>
       <div className="flex flex-row items-center justify-center mt-4">
@@ -90,6 +95,7 @@ const App = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 
